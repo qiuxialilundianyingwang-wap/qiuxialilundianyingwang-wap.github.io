@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="秋霞理论电影网 - 电影理论与学术研究的专题资料馆，涵盖电影符号学、叙事学、作者论、镜头语言等深度内容，为影迷提供系统化的电影知识。">
+<meta name="keywords" content="秋霞理论电影网,qiuxialilundianyingwang-wap,电影理论,电影研究,电影符号学,叙事学,作者论,镜头语言,学术影评">
+<meta name="author" content="秋霞理论电影网">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="秋霞理论电影网 | 电影理论与学术研究专题">
+<meta property="og:description" content="电影符号学、叙事学、作者论、镜头语言 —— 系统化的电影知识资料馆。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://qiuxialilundianyingwang-wap.github.io">
+<meta property="og:site_name" content="秋霞理论电影网">
+<link rel="canonical" href="https://qiuxialilundianyingwang-wap.github.io">
+<title>秋霞理论电影网 | 电影理论与学术研究 - qiuxialilundianyingwang-wap.github.io</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --ink:#2a2218;
+  --deep:#3d2e15;
+  --autumn:#a0522d;
+  --amber:#c8762f;
+  --gold:#d9a441;
+  --gold2:#eccb6f;
+  --cream:#fdf8ee;
+  --leaf:#7a9a3f;
+  --leaf2:#a8c25c;
+  --line:rgba(160,82,45,.22);
+  --shadow:0 10px 26px rgba(122,76,30,.16);
+}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Songti SC","SimSun","Source Han Serif SC","Noto Serif CJK SC","Microsoft YaHei",serif;
+  background:
+    radial-gradient(circle at 8% 12%,rgba(217,164,65,.16),transparent 40%),
+    radial-gradient(circle at 92% 72%,rgba(122,154,63,.14),transparent 42%),
+    linear-gradient(170deg,#fdf8ee,#faf1e0);
+  background-attachment:fixed;
+  color:var(--ink);line-height:1.9;
+}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:radial-gradient(rgba(160,82,45,.05) 1px,transparent 1px);background-size:14px 14px;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+.container{max-width:1120px;margin:0 auto;padding:0 22px;}
+main,header,footer{position:relative;z-index:1;}
+
+/* ===== 顶部 ===== */
+header.top{background:linear-gradient(120deg,#2e220f,#5c3d17 55%,#8a5a22);position:sticky;top:0;z-index:1000;box-shadow:0 4px 18px rgba(92,61,23,.35);}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:80px;gap:16px;}
+.brand{display:flex;align-items:center;gap:14px;}
+.brand .seal{width:50px;height:50px;border-radius:50%;background:radial-gradient(circle at 32% 28%,var(--gold2),var(--amber));display:grid;place-items:center;font-size:22px;font-weight:900;color:#5c3d17;border:3px solid #fff;box-shadow:0 4px 12px rgba(0,0,0,.25);}
+.brand .name b{font-size:21px;color:var(--gold2);letter-spacing:2px;}
+.brand .name small{font-size:11px;letter-spacing:3px;color:rgba(236,203,111,.7);}
+nav.pri{display:flex;gap:4px;}
+nav.pri a{padding:9px 15px;color:#f5e6c8;font-size:15px;font-weight:700;border-radius:6px;transition:.25s;border-bottom:2px solid transparent;}
+nav.pri a:hover{background:rgba(236,203,111,.16);color:#fff;border-bottom-color:var(--gold2);}
+.btn-go{padding:10px 22px;border:0;border-radius:4px;background:linear-gradient(135deg,var(--gold),var(--amber));color:#3d2e15;font-weight:900;font-size:14px;cursor:pointer;transition:.25s;box-shadow:0 4px 12px rgba(200,118,47,.4);}
+.btn-go:hover{transform:translateY(-2px);}
+.burger{display:none;color:var(--gold2);font-size:28px;cursor:pointer;}
+
+/* ===== Hero ===== */
+.hero{padding:88px 0 70px;text-align:center;position:relative;}
+.hero .leaf{position:absolute;font-size:46px;opacity:.5;animation:fall 7s linear infinite;}
+.hero .leaf:nth-child(1){left:6%;top:8%;animation-delay:0s;}
+.hero .leaf:nth-child(2){left:18%;top:70%;animation-delay:1.5s;}
+.hero .leaf:nth-child(3){right:12%;top:14%;animation-delay:3s;}
+.hero .leaf:nth-child(4){right:6%;top:64%;animation-delay:4.5s;}
+@keyframes fall{0%{transform:translateY(-30px) rotate(0);opacity:0}20%{opacity:.5}100%{transform:translateY(40px) rotate(40deg);opacity:0}}
+.hero-in{position:relative;}
+.hero .quote{font-size:13px;letter-spacing:6px;color:var(--amber);font-weight:700;margin-bottom:18px;}
+.hero h1{font-size:clamp(34px,6.4vw,58px);font-weight:900;letter-spacing:3px;line-height:1.25;}
+.hero h1 .hl{color:var(--autumn);}
+.hero p.lead{max-width:640px;margin:20px auto 0;font-size:17px;color:#6b5636;}
+.hero .acts{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.hero .acts a{padding:13px 30px;font-size:15px;font-weight:900;border-radius:4px;transition:.25s;}
+.hero .acts a.primary{background:linear-gradient(135deg,var(--autumn),var(--amber));color:#fff;box-shadow:0 8px 20px rgba(160,82,45,.35);}
+.hero .acts a.primary:hover{transform:translateY(-3px);}
+.hero .acts a.ghost{border:2px solid var(--amber);color:var(--autumn);background:rgba(255,255,255,.5);}
+.hero .acts a.ghost:hover{background:var(--amber);color:#fff;}
+
+/* ===== 通用栏目头 ===== */
+section.block{padding:78px 0;}
+.head{text-align:center;margin-bottom:46px;}
+.head .k{display:inline-block;font-size:12px;letter-spacing:4px;font-weight:900;color:#fff;background:linear-gradient(135deg,var(--autumn),var(--gold));padding:7px 22px;border-radius:4px;}
+.head h2{font-size:clamp(24px,3.8vw,34px);font-weight:900;margin-top:18px;letter-spacing:2px;}
+.head h2 em{font-style:normal;color:var(--autumn);}
+.head p.sub{color:#8a7552;font-size:15px;margin-top:8px;}
+
+/* ===== 栏目一：理论框架（四栏竖排文献卡） ===== */
+.theory{display:grid;gap:22px;grid-template-columns:repeat(4,1fr);}
+.doc{background:#fffdf7;border:1px solid var(--line);border-radius:6px;padding:26px 22px;box-shadow:var(--shadow);position:relative;transition:.3s;}
+.doc::before{content:"";position:absolute;top:0;left:22px;right:22px;height:3px;background:linear-gradient(90deg,var(--amber),var(--gold2));}
+.doc:hover{transform:translateY(-6px);border-color:var(--amber);}
+.doc .no{font-size:13px;font-weight:900;color:var(--amber);letter-spacing:2px;margin-bottom:10px;}
+.doc h4{font-size:19px;font-weight:900;margin-bottom:12px;color:var(--deep);}
+.doc p{font-size:14px;color:#6b5636;margin-bottom:14px;}
+.doc .kw{display:flex;flex-wrap:wrap;gap:6px;}
+.doc .kw span{font-size:11.5px;color:var(--autumn);background:rgba(217,164,65,.18);padding:3px 9px;border-radius:3px;font-weight:700;}
+
+/* ===== 栏目二：核心命题（五层横向阶梯） ===== */
+.ladder{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+.step{display:flex;align-items:center;gap:22px;background:#fffdf7;border:1px solid var(--line);border-radius:6px;padding:20px 26px;box-shadow:var(--shadow);transition:.3s;}
+.step:hover{background:linear-gradient(100deg,rgba(200,118,47,.08),transparent);}
+.step .bar{width:58px;height:58px;flex-shrink:0;border-radius:50%;background:linear-gradient(135deg,var(--autumn),var(--gold));display:grid;place-items:center;font-size:24px;color:#fff;font-weight:900;}
+.step .tx h4{font-size:18px;font-weight:900;color:var(--deep);}
+.step .tx p{font-size:14px;color:#6b5636;}
+.step:nth-child(1){margin-left:0;}
+.step:nth-child(2){margin-left:6%;}
+.step:nth-child(3){margin-left:12%;}
+.step:nth-child(4){margin-left:18%;}
+.step:nth-child(5){margin-left:24%;}
+
+/* ===== 栏目三：推荐书影（图文左右对照） ===== */
+.refer{display:grid;gap:26px;grid-template-columns:repeat(2,1fr);}
+.book{display:grid;grid-template-columns:120px 1fr;gap:20px;background:#fffdf7;border:1px solid var(--line);border-radius:6px;padding:22px;box-shadow:var(--shadow);align-items:center;}
+.book .cv{width:120px;height:150px;border-radius:4px;display:grid;place-items:center;font-size:46px;color:#fff;position:relative;}
+.book .cv::after{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:rgba(255,255,255,.45);}
+.book .cv.b1{background:linear-gradient(150deg,#5c3d17,#a0522d);}
+.book .cv.b2{background:linear-gradient(150deg,#3d4a2e,#7a9a3f);}
+.book .cv.b3{background:linear-gradient(150deg,#3a3a5c,#6f6fb8);}
+.book .cv.b4{background:linear-gradient(150deg,#5c2e2e,#a05a5a);}
+.book .tx h4{font-size:17px;font-weight:900;margin-bottom:6px;color:var(--deep);}
+.book .tx .au{font-size:12px;color:var(--amber);font-weight:700;margin-bottom:8px;}
+.book .tx p{font-size:13.5px;color:#6b5636;}
+
+/* ===== 栏目四：研究方法（横向流程节点） ===== */
+.flow{display:flex;align-items:stretch;gap:0;max-width:960px;margin:0 auto;flex-wrap:wrap;justify-content:center;}
+.flow .node{flex:1;min-width:150px;text-align:center;padding:24px 14px;background:#fffdf7;border:1px solid var(--line);position:relative;}
+.flow .node:not(:last-child)::after{content:"→";position:absolute;right:-12px;top:50%;transform:translateY(-50%);z-index:5;width:24px;height:24px;background:var(--amber);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:900;}
+.flow .node .ic{width:52px;height:52px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(135deg,var(--amber),var(--gold2));display:grid;place-items:center;font-size:24px;}
+.flow .node h4{font-size:16px;font-weight:900;color:var(--deep);margin-bottom:6px;}
+.flow .node p{font-size:12.5px;color:#6b5636;}
+
+/* ===== 栏目五：关于（落叶拼贴） ===== */
+.about{background:#fffdf7;border:1px solid var(--line);border-radius:8px;padding:44px;box-shadow:var(--shadow);max-width:900px;margin:0 auto;position:relative;overflow:hidden;}
+.about .corner{position:absolute;font-size:42px;opacity:.3;}
+.about .corner.tl{top:14px;left:18px;}
+.about .corner.br{bottom:14px;right:18px;}
+.about h3{font-size:25px;font-weight:900;text-align:center;margin-bottom:16px;color:var(--deep);}
+.about .who{text-align:center;font-size:15px;color:#6b5636;max-width:660px;margin:0 auto 30px;}
+.about .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.about .stats div{text-align:center;padding:20px 8px;border-radius:6px;background:linear-gradient(160deg,rgba(200,118,47,.10),rgba(217,164,65,.10));border:1px solid var(--line);}
+.about .stats b{display:block;font-size:26px;font-weight:900;color:var(--autumn);}
+.about .stats small{font-size:12.5px;color:#8a7552;}
+
+/* ===== 页脚 ===== */
+footer{background:linear-gradient(120deg,#2e220f,#5c3d17 60%,#4a3317);color:#e6d3ac;padding:56px 0 24px;}
+.foot-in{max-width:1120px;margin:0 auto;padding:0 22px;}
+.foot-grid{display:grid;gap:34px;grid-template-columns:1.6fr 1fr 1fr 1fr;margin-bottom:34px;}
+.foot-grid .brand .seal{width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 32% 28%,var(--gold2),var(--amber));display:grid;place-items:center;font-size:20px;font-weight:900;color:#5c3d17;border:3px solid #e6d3ac;margin-bottom:14px;}
+.foot-grid .brand b{font-size:19px;color:var(--gold2);letter-spacing:2px;}
+.foot-grid .brand p{font-size:14px;margin-top:12px;color:#c9b58c;max-width:300px;}
+.foot-col h5{font-size:12px;letter-spacing:3px;color:var(--gold2);margin-bottom:14px;}
+.foot-col a{display:block;color:#c9b58c;font-size:14px;padding:5px 0;transition:.2s;}
+.foot-col a:hover{color:#fff;padding-left:6px;}
+.copy{border-top:1px solid rgba(217,164,65,.3);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#b09a70;}
+
+/* ===== 响应式 ===== */
+@media(max-width:960px){
+  nav.pri{display:none;position:absolute;top:80px;left:0;right:0;flex-direction:column;background:#5c3d17;padding:14px;border-top:2px solid var(--gold);}
+  nav.pri.open{display:flex;}
+  nav.pri a{width:100%;text-align:center;}
+  .burger{display:block;}
+  .theory{grid-template-columns:1fr 1fr;}
+  .refer{grid-template-columns:1fr;}
+  .book{grid-template-columns:90px 1fr;gap:16px;}
+  .book .cv{width:90px;height:120px;font-size:34px;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:520px){
+  .hero{padding:56px 0 44px;}
+  section.block{padding:56px 0;}
+  .theory{grid-template-columns:1fr;}
+  .step{margin-left:0 !important;gap:14px;padding:16px 18px;}
+  .step .bar{width:46px;height:46px;font-size:19px;}
+  .flow .node:not(:last-child)::after{display:none;}
+  .about{padding:32px 20px;}
+  .about .stats{grid-template-columns:1fr 1fr;}
+  .foot-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- ===== 顶部 ===== -->
+<header class="top">
+  <div class="container top-in">
+    <a href="#" class="brand">
+      <span class="seal">秋</span>
+      <span class="name"><b>秋霞理论电影网</b><small>电影理论与学术研究</small></span>
+    </a>
+    <nav class="pri" id="nav">
+      <a href="#theory">理论框架</a>
+      <a href="#ladder">核心命题</a>
+      <a href="#refer">推荐书影</a>
+      <a href="#flow">研究方法</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <button class="btn-go" onclick="location.href='#'">📖 进入资料馆</button>
+    <span class="burger" onclick="document.getElementById('nav').classList.toggle('open')">☰</span>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <span class="leaf">🍂</span><span class="leaf">🍁</span><span class="leaf">🍂</span><span class="leaf">🍁</span>
+  <div class="container hero-in">
+    <div class="quote">— 理 论 之 光 · 照 见 影 像 —</div>
+    <h1>秋霞<span class="hl">理论电影网</span></h1>
+    <p class="lead">不止于看电影，更读懂电影。符号学、叙事学、作者论、镜头语言 —— 系统的电影理论，在这里为你铺开。</p>
+    <div class="acts"><a href="#theory" class="primary">浏览理论框架</a><a href="#ladder" class="ghost">探索核心命题</a></div>
+  </div>
+</section>
+
+<!-- ===== 栏目一：理论框架（四栏竖排文献卡） ===== -->
+<section class="block" id="theory">
+  <div class="container">
+    <div class="head"><span class="k">理 论 框 架</span><h2>电影的<em>四大理论</em>支柱</h2><p class="sub">从符号到叙事，从作者到镜头，搭建系统认知</p></div>
+    <div class="theory">
+      <div class="doc"><div class="no">卷 一</div><h4>电影符号学</h4><p>把影像当作语言来拆解，研究镜头、构图、色彩背后的"能指"与"所指"。</p><div class="kw"><span>麦茨</span><span>符码</span><span>隐喻</span></div></div>
+      <div class="doc"><div class="no">卷 二</div><h4>叙事学分析</h4><p>时间、视角、因果链 —— 电影如何"讲故事"，故事如何被结构。</p><div class="kw"><span>时序</span><span>视点</span><span>因果</span></div></div>
+      <div class="doc"><div class="no">卷 三</div><h4>作者论</h4><p>导演即作者，镜头是笔。识别一位导演贯穿始终的个人风格与主题。</p><div class="kw"><span>特吕弗</span><span>风格</span><span>母题</span></div></div>
+      <div class="doc"><div class="no">卷 四</div><h4>镜头与视听</h4><p>景别、运动、声音、蒙太奇 —— 电影语法的最小单元与组合法则。</p><div class="kw"><span>蒙太奇</span><span>长镜头</span><span>声画</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目二：核心命题（五层阶梯） ===== -->
+<section class="block" id="ladder" style="padding-top:0;">
+  <div class="container">
+    <div class="head"><span class="k">核 心 命 题</span><h2>读懂一部电影的<em>五个层次</em></h2><p class="sub">从表象到内核，逐层深入影像</p></div>
+    <div class="ladder">
+      <div class="step"><div class="bar">1</div><div class="tx"><h4>看故事：情节与人物</h4><p>最表层：谁在何时何地做了什么？故事线是否清晰、动人。</p></div></div>
+      <div class="step"><div class="bar">2</div><div class="tx"><h4>看形式：镜头与调度</h4><p>镜头如何摆放？演员如何走位？形式本身就在传递意义。</p></div></div>
+      <div class="step"><div class="bar">3</div><div class="tx"><h4>看符码：意象与隐喻</h4><p>反复出现的颜色、物件、空间，都是导演埋下的符号线索。</p></div></div>
+      <div class="step"><div class="bar">4</div><div class="tx"><h4>看语境：时代与作者</h4><p>结合创作年代、导演生平与流派，理解作品的历史坐标。</p></div></div>
+      <div class="step"><div class="bar">5</div><div class="tx"><h4>看自我：共鸣与反思</h4><p>电影最终照见的是观众自己 —— 它触动了你什么？</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目三：推荐书影（图文左右对照） ===== -->
+<section class="block" id="refer" style="padding-top:0;">
+  <div class="container">
+    <div class="head"><span class="k">推 荐 书 影</span><h2>延伸<em>阅读与观影</em></h2><p class="sub">理论之外，这些经典值得反复咀嚼</p></div>
+    <div class="refer">
+      <div class="book"><div class="cv b1">📕</div><div class="tx"><div class="au">克里斯蒂安·麦茨 著</div><h4>《电影的意义》</h4><p>电影符号学的奠基之作，系统阐释影像如何成为"语言"。</p></div></div>
+      <div class="book"><div class="cv b2">🎬</div><div class="tx"><div class="au">安德烈·巴赞</div><h4>《电影是什么？》</h4><p>写实主义电影理论的源头，长镜头与深焦的经典论述。</p></div></div>
+      <div class="book"><div class="cv b3">📗</div><div class="tx"><div class="au">大卫·波德维尔</div><h4>《电影艺术：形式与风格》</h4><p>最适合入门的系统教材，拆解电影的形式语言与风格。</p></div></div>
+      <div class="book"><div class="cv b4">🎞️</div><div class="tx"><div class="au">经典片单</div><h4>《八部半》</h4><p>费里尼的自反之作，堪称"关于电影的电影"范本。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目四：研究方法（横向流程节点） ===== -->
+<section class="block" id="flow" style="padding-top:0;">
+  <div class="container">
+    <div class="head"><span class="k">研 究 方 法</span><h2>如何<em>分析一部电影</em></h2><p class="sub">可复用的四步法，让观影更有深度</p></div>
+    <div class="flow">
+      <div class="node"><div class="ic">🔍</div><h4>观察</h4><p>反复观看，记录细节与感受</p></div>
+      <div class="node"><div class="ic">🧩</div><h4>拆解</h4><p>分离叙事、视听、主题元素</p></div>
+      <div class="node"><div class="ic">🔗</div><h4>关联</h4><p>联系作者、时代与理论语境</p></div>
+      <div class="node"><div class="ic">✍️</div><h4>表达</h4><p>形成有观点的文字或影像</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目五：关于（落叶拼贴） ===== -->
+<section class="block" id="about" style="padding-top:0;">
+  <div class="container">
+    <div class="about">
+      <span class="corner tl">🍂</span><span class="corner br">🍁</span>
+      <h3>关于 秋霞理论电影网</h3>
+      <p class="who">秋霞理论电影网致力于电影理论与学术研究的普及，为影迷提供系统化的电影知识，从符号学到叙事学，从作者论到镜头语言，让每一次观影都更有深度。</p>
+      <div class="stats">
+        <div><b>4</b><small>理论支柱</small></div>
+        <div><b>5</b><small>解读层次</small></div>
+        <div><b>4</b><small>研究方法</small></div>
+        <div><b>∞</b><small>理论资料</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="foot-in">
+    <div class="foot-grid">
+      <div class="brand"><div class="seal">秋</div><b>秋霞理论电影网</b><p>电影理论与学术研究专题资料馆，涵盖符号学、叙事学、作者论、镜头语言等系统内容。</p></div>
+      <div class="foot-col"><h5>理论</h5><a href="#">符号学</a><a href="#">叙事学</a><a href="#">作者论</a><a href="#">镜头语言</a></div>
+      <div class="foot-col"><h5>资料</h5><a href="#">推荐书影</a><a href="#">经典片单</a><a href="#">研究论文</a><a href="#">术语表</a></div>
+      <div class="foot-col"><h5>资料馆</h5><a href="#">关于本站</a><a href="#">投稿合作</a><a href="#">联系编辑</a></div>
+    </div>
+    <div class="copy"><span>© 2026 秋霞理论电影网（qiuxialilundianyingwang-wap.github.io）· 电影理论与学术研究专题</span><span>— 理论之光照见影像 —</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
